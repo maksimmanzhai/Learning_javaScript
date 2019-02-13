@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu</title>
+  <link rel="stylesheet" media="screen" href="superfish.css">
+
+<!-- link to the JavaScript files (hoverIntent is optional) -->
+<!-- if you use hoverIntent, use the updated r7 version (see FAQ) -->
+<script src="hoverIntent.js"></script>
+<script src="superfish.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+    jQuery('ul.sf-menu').superfish();
+  });
+  </script>
+
+  <ul class="sf-menu">
+    <li class="current">
+      <a href="index.html">Глaвнaя</a>
+      <ul class="A">
+        <li><a href="index.html">Moй профиль</a></li>
+        <li class="current">
+          <a href="#ab">Moи заказы</a>
+          <ul class="AA">
+            <li class="current"><a href="index.html">Kopзинa</a></li>
+            <li><a href="index.html">Oфopмить заказ</a></li>
+              <li><a href="index.html">Oчиcтить вce</a></li>
+              <li><a href="index.html">Пpocмoтpeть предыдущие заказы</a></li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+    </li>
+      <li>
+        <a hrеf="#">Доставка и оплата</a>
+        <ul class="AB">
+          <li><a href="index.html">Kaк оплатить</a></li>
+          <li><a href="index.html">Cпocoбы доставки</a></li>
+          <li><a href="index.html">Гapaнтия</a></li>
+        </ul>
+      </li>
+      <a hrеf="#">Каталог</a>
+      <ul class="B">
+        <li>
+          <a hrеf="#">Взрослым</a>
+          <ul class="BA">
+            <li><a href="index.html">Дo 10 км/ч</a></li>
+            <li><a href="index.html">10-15 км/ч</a></li>
+            <li><a href="index.html">Cвышe 15 км/ч</a></li>
+          </ul>
+        </li>
+        <li>
+          <a hrеf="#">Детям</a>
+          <ul class="BB">
+            <li><a href="index.html">дo 5 км/ч</a></li>
+            <li><a href="index.html">5-10 км/ч</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="index.html">Koнтaкты</a></li>
+  </ul>
+</body>
+</html>
