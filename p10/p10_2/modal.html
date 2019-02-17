@@ -4,17 +4,20 @@
   <meta charset="utf-8">
   <title>Enter you name</title>
   <script type="text/javascript">
+    
     function Onclick() {
       var o = {};
-      o.first = document.forms[0].first.value;
-      o.last = document.forms[0].last.value;
+      o[0] = document.forms[0].first.value;
+      o[1] = document.forms[0].last.value;
       window.returnValue = о;
       window.close();
     }
+
     function Onload() {
       document.forms[0].first.value = window.dialogArguments[0];
       document.forms[0].last.value = window.dialogArguments[1];
     }
+    
     </script>
   </head>
   <body onload="Onload();">
