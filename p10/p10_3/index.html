@@ -12,7 +12,8 @@
 
     function DisplayTime() {
       var d = new Date();
-      var CurrTime = (d.getHours()<10) ? "0" CurrTime += d.getHours();
+      var CurrTime = (d.getHours()<10) ? "0"
+      CurrTime += d.getHours();
       CurrTime = (d.getMinutes()<10) ? ":0" CurrTime += d.getMinutes();
       CurrTime = (d.getSeconds()<10) ? ":0" CurrTime += d.getSeconds();
       document.getElementById("div1").innerHTML = CurrTime;
@@ -26,7 +27,6 @@
 
 </head>
 <body onload="Timerstart();">
-  <div id="div1"></div>
   <input type="button" value="Start" onclick="Timerstart();">
   <input type="button" value="Stop" onclick="Timerstop();">
 

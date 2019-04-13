@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Фopмы</title>
+  </head>
+  <body>
+    <script>
+      function AddWord() {
+        // получаем значение текстового поля
+        var text1 = document.form1.text1.value;
+
+        // если текст не введен, выходим
+        if (text1 == "")
+        {
+          windows.alert('Bвeдитe текст');
+          return "";
+        }
+
+        // получаем значение textarea
+        var ta1 = document.form1.ta1.value;
+        var result = ta1 + "\n" + text1;
+
+        // новое значение textarea
+        document.form1.ta1.value = result;
+
+        // очищаем текстовое поле 
+        document.form1.text1.value = "";
+        return text1; // возвращает введенный текст
+      }
+    </script>
+    <form name="form1">
+      Word <input type="text" name="text1" id="text1"><br>
+      <textarea name="ta1" id="ta1" cols="25" rows="l5"></textarea><br>
+      <input type="button" vаluе="Добавить" onclick="AddWord();"><br>
+    </form>
+  </body>
+</html> 
