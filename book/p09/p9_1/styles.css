@@ -1,0 +1,58 @@
+.menu {
+  position: relative;
+  height: 30px;
+}
+
+.menu table {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  border: 1px solid black;
+  background-color: white;
+  border-spacing: 0;
+}
+
+.menu td {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font: 12px Verdana, Arial, sans-serif;
+  color: blue;
+  display: block;
+  border: 1px solid black;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.ids td {
+  width: 188рх;
+}
+
+.ids а {
+  border: none;
+}
+
+#menu1, #menu2, #menu3, #menu4 {
+  display:none;
+  top: 20рх;
+  left: 16рх;
+}
+
+#menu2 {
+  left: 226рх;
+}
+
+#menuЗ {
+  left: 436рх;
+}
+
+#menu4 {
+  left: 646рх;
+}

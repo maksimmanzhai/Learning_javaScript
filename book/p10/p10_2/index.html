@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Modal dialog</title>
+  <script>
+    function wmopen() {
+      var obj = window.showModalDialog("modal.html", [ "Firstname", "Lastname"], "dialogWidth:300px; dialogHeight:200px; center=yes; status=no;");
+      if (obj != null) {
+        var msg = "Имя: " + obj.first;
+        msg += "<Ьr>Фамилия: " + obj.last;
+        document.getElementByid("div1").innerHTML = msg;
+      }
+    }
+  </script> 
+</head>
+<body>
+  <p><input type="button" vаluе="Открыть диалог" onlick="wmopen();"></p>
+  <div id="div1"></div>
+</body>
+</html>

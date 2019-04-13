@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Enter you name</title>
+  <script type="text/javascript">
+    
+    function Onclick() {
+      var o = {};
+      o[0] = document.forms[0].first.value;
+      o[1] = document.forms[0].last.value;
+      window.returnValue = о;
+      window.close();
+    }
+
+    function Onload() {
+      document.forms[0].first.value = window.dialogArguments[0];
+      document.forms[0].last.value = window.dialogArguments[1];
+    }
+    
+    </script>
+  </head>
+  <body onload="Onload();">
+    <form action="" id="frm">
+      <div style="text-align: center">
+        Имя:<br><input type="text" name="first"><br>
+        Фамилия:<br><input type="text" name="last"><br>
+        <input type="reset" vаluе="Очистить">
+        <input type="button" value="OK" onclick="Onclick();">
+      </div>
+    </form>
+  </body>
+</html>
