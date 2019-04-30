@@ -23,4 +23,23 @@ describe("pow", function() {
     assert(isNaN(pow(2, 1.5)), "pow(2, -1.5) не NaN");
   });
 
+  describe("любое число в нулевой степени равно 1", function() {
+
+    function makeTest(x) {
+      var expected = 1;
+      it("при возведении " + x + " в степень 0 результат: " + expected, function() {
+        assert.equal(pow(x, 0), expected);
+      });
+    }
+
+    for (var x = 1; x <= 5; x++) {
+      makeTest(x);
+    }
+
+  });
+
+  it("ноль в нулевой степени даёт NaN", function() {
+    assert(isNaN(pow(0, 0)), "pow(0, 0) не NaN");
+  });
+
 });
